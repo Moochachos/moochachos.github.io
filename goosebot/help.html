@@ -2,6 +2,10 @@
 .tableRow {
   text-align: center;
 }
+
+#helpTable th, td {
+  padding: 15px;
+}
 </style>
 <html>
 <center>
@@ -9,14 +13,14 @@
 <h2>(use a ; as a prefix for all commands)</h2>
 <body>
 
-<table border="1">
+<table id="helpTable" border="1">
 
 <tr class="tableRow">
-<td>s (input)</td>
-<td>Search for (input) on youtube</td>
+<td>search &lt;input&gt;</td>
+<td>Search for &lt;input&gt; on youtube</td>
 
 <tr class="tableRow">
-<td>c (input)</td>
+<td>choose &lt;input&gt;</td>
 <td>Choose a song <br> Type a number to choose from the latest search results <br> Type a youtube song/playlist link to play a song/playlist</td>
 
 <tr class="tableRow">
@@ -24,20 +28,36 @@
 <td>Leave the voice channel</td>
 
 <tr class="tableRow">
+<td>stop</td>
+<td>Stop playing the current video</td>
+
+<tr class="tableRow">
 <td>queue</td>
-<td>Get the list of videos in the song queue <br> The latest queue command will auto-update</td>
+<td>Get the list of videos in the song queue <br> The latest queue message will auto-update</td>
 
 <tr class="tableRow">
 <td>clear</td>
-<td>Clear the playlist</td>
+<td>Clear the queue</td>
 
 <tr class="tableRow">
-<td>playcurrent</td>
-<td>Plays the first video in the queue</td>
+<td>play &lt;number&gt;</td>
+<td>Play &lt;number&gt; from the queue (will play the first video in the queue if no &lt;number&gt;)</td>
 
 <tr class="tableRow">
 <td>next | skip</td>
 <td>Plays the next video in the queue</td>
+
+<tr class="tableRow">
+<td>remove &lt;number&gt;</td>
+<td>Remove &lt;number&gt; from the queue</td>
+
+<tr class="tableRow">
+<td>repeat</td>
+<td>Put the current video on/off repeat</td>
+
+<tr class="tableRow">
+<td>info <number></td>
+<td>Get info of &lt;number&gt; from the queue (will get current info if no &lt;number&gt;)</td>
 
 <tr class="tableRow">
 <td>pause</td>
@@ -45,7 +65,7 @@
 
 <tr class="tableRow">
 <td>resume</td>
-<td>Resumes the video</td>
+<td>Resume the video</td>
 
 
 </body>
