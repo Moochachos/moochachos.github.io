@@ -6,6 +6,12 @@
 #helpTable th, td {
   padding: 15px;
 }
+
+example {
+  font-weight: bold;
+  font-style: italic;
+}
+
 </style>
 <html>
 <center>
@@ -15,66 +21,80 @@
 
 <table id="helpTable" border="1">
 
-<tr class="tableRow">
-<td>search &lt;input&gt;</td>
-<td>Search for &lt;input&gt; on youtube</td>
+  <tr class="tableRow">
+  <td>Command</td>
+  <td>Description</td>
+  <td>Example</td>
 
-<tr class="tableRow">
-<td>choose &lt;input&gt;</td>
-<td>Choose a song <br> Type a number to choose from the latest search results <br> Type a youtube song/playlist link to play a song/playlist</td>
+  <tr class="tableRow">
+  <td>(search | s) &lt;input&gt;</td>
+  <td>Search for &lt;input&gt; on youtube</td>
+  <td><example>;s abc</example> will show youtube search results for "abc"</td>
 
-<tr class="tableRow">
-<td>leave</td>
-<td>Leave the voice channel</td>
+  <tr class="tableRow">
+  <td>(choose | c) &lt;input&gt;</td>
+  <td>Choose a song <br> Type a number to choose from the latest search results <br> Type a youtube song/playlist link to play a song/playlist</td>
+  <td><example>;c 2</example> will add the second song from the search results to the queue</td>
 
-<tr class="tableRow">
-<td>stop</td>
-<td>Stop playing the current song</td>
+  <tr class="tableRow">
+  <td>leave</td>
+  <td>Leave the voice channel</td>
 
-<tr class="tableRow">
-<td>queue</td>
-<td>Get the list of songs in the song queue <br> The latest queue message will auto-update</td>
+  <tr class="tableRow">
+  <td>stop</td>
+  <td>Stop playing the current song</td>
 
-<tr class="tableRow">
-<td>clear</td>
-<td>Clear the queue</td>
+  <tr class="tableRow">
+  <td>queue</td>
+  <td>Get the list of songs in the song queue <br> The latest queue message will auto-update</td>
 
-<tr class="tableRow">
-<td>play &lt;number&gt;</td>
-<td>Play &lt;number&gt; from the queue (will play the first song in the queue if no &lt;number&gt;)</td>
+  <tr class="tableRow">
+  <td>clear</td>
+  <td>Clear the queue</td>
 
-<tr class="tableRow">
-<td>next | skip</td>
-<td>Plays the next song in the queue</td>
+  <tr class="tableRow">
+  <td>play &lt;number&gt;</td>
+  <td>Play &lt;number&gt; from the queue (will play the first song in the queue if no &lt;number&gt;)</td>
 
-<tr class="tableRow">
-<td>skipto &lt;number&gt;</td>
-<td>Skip to &lt;number&gt;</td>
+  <tr class="tableRow">
+  <td>next | skip</td>
+  <td>Plays the next song in the queue</td>
 
-<tr class="tableRow">
-<td>remove &lt;number&gt;</td>
-<td>Remove &lt;number&gt; from the queue</td>
+  <tr class="tableRow">
+  <td>skipto &lt;number&gt;</td>
+  <td>Skip to &lt;number&gt;</td>
 
-<tr class="tableRow">
-<td>repeat</td>
-<td>Put the current song on/off repeat</td>
+  <tr class="tableRow">
+  <td>remove &lt;number&gt;</td>
+  <td>Remove &lt;number&gt; from the queue</td>
 
-<tr class="tableRow">
-<td>restart</td>
-<td>Restart the current song</td>
+  <tr class="tableRow">
+  <td>repeat</td>
+  <td>Put the current song on/off repeat</td>
 
-<tr class="tableRow">
-<td>info <number></td>
-<td>Get info of &lt;number&gt; from the queue (will get current info if no &lt;number&gt;)</td>
+  <tr class="tableRow">
+  <td>restart</td>
+  <td>Restart the current song</td>
 
-<tr class="tableRow">
-<td>pause</td>
-<td>Pause the song</td>
+  <tr class="tableRow">
+  <td>info <number></td>
+  <td>Get info of &lt;number&gt; from the queue (will get current info if no &lt;number&gt;)</td>
+  <td><example>;info 4</example> will show the song info for the 4th song in the queue</td>
 
-<tr class="tableRow">
-<td>resume | unpause</td>
-<td>Resume the song</td>
+  <tr class="tableRow">
+  <td>pause</td>
+  <td>Pause the song</td>
 
+  <tr class="tableRow">
+  <td>resume | unpause</td>
+  <td>Resume the song</td>
+
+  <tr class="tableRow">
+  <td>move | reorder &lt;number&gt;</td>
+  <td>Change position of a song in the queue</td>
+  <td><example>;move 5 3</example> will move the 5th song to the 3rd song in the queue</td>
+
+</table>
 
 </body>
 </center>
