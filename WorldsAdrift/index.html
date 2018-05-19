@@ -1,0 +1,55 @@
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#wood {
+  display: block;
+  width: 100%;
+}
+
+#metal {
+  display: block;
+  width: 100%;
+}
+
+#left {
+  float: left;
+  width: 50%;
+}
+
+#right {
+  float: right;
+  width: 50%;
+}
+
+#map {
+  float: right;
+  width: 100%;
+}
+
+</style>
+<html>
+<div id="left">
+  <img id="wood" src="wood.png"></img>
+  <img id="metal" src="metal.png"></img>
+</div>
+<div id="right">
+  <iframe id="map" src="https://jerodar.github.io/WAMap/"></iframe>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+//<iframe id="map" src="https://jerodar.github.io/WAMap/"></iframe>
+
+window.onresize = function(event) {
+  windowResize();
+};
+function windowResize(){
+  console.log("resize");
+  document.getElementById("map").style.height = document.getElementById("map").offsetWidth;
+}
+</script>
+</html>
